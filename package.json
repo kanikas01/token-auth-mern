@@ -1,0 +1,32 @@
+{
+  "name": "token-auth-mern",
+  "version": "1.0.0",
+  "description": "Authentication For A React and Express Application w/ JSON Web Tokens",
+  "main": "server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kanikas01/token-auth-mern.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kanikas01/token-auth-mern/issues"
+  },
+  "homepage": "https://github.com/kanikas01/token-auth-mern#readme",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "express": "^4.17.0",
+    "if-env": "^1.0.4"
+  }
+}
