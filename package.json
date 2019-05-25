@@ -25,8 +25,11 @@
   },
   "homepage": "https://github.com/kanikas01/token-auth-mern#readme",
   "dependencies": {
+    "axios": "^0.18.0",
+    "bcrypt": "^3.0.6",
     "concurrently": "^4.1.0",
     "express": "^4.17.0",
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "mongoose": "^5.5.11"
   }
 }
