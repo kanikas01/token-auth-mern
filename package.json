@@ -26,7 +26,7 @@
   "homepage": "https://github.com/kanikas01/token-auth-mern#readme",
   "dependencies": {
     "axios": "^0.19.0",
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "concurrently": "^4.1.0",
     "cookie-parser": "^1.4.4",
     "express": "^4.17.0",
